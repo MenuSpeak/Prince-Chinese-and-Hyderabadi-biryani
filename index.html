@@ -1397,19 +1397,59 @@ text-decoration:none;
     <script>
         // Menu Data - FIXED VERSION
         const data = [
-{"id": 1, "cat": "Popular Items", "name": "बिर्याणी | Biryani", "price": "Rs. 0", "desc": "Biryani", "tags": ["Non-Veg", "Biryani"], "img": "img/biryani.jpg"},
-{"id": 2, "cat": "Popular Items", "name": "चिकन रोस्ट | Chicken Roast", "price": "Rs. 0", "desc": "Chicken Roast", "tags": ["Non-Veg", "Chicken", "Starter"], "img": "img/chicken_roast.jpg"},
-{"id": 3, "cat": "Popular Items", "name": "चिकन राईस | Chicken Rice", "price": "Rs. 0", "desc": "Chicken Rice", "tags": ["Non-Veg", "Chinese", "Rice"], "img": "img/chicken_rice.jpg"},
-{"id": 4, "cat": "Popular Items", "name": "चिकन लॉलीपॉप | Chicken Lollipop", "price": "Rs. 0", "desc": "Chicken Lollipop", "tags": ["Non-Veg", "Chicken", "Starter"], "img": "img/chicken_lollipop.jpg"},
-{"id": 5, "cat": "Popular Items", "name": "मंचुरियन | Manchurian", "price": "Rs. 0", "desc": "Manchurian", "tags": ["Veg", "Chinese"], "img": "img/manchurian.jpg"},
-{"id": 6, "cat": "Popular Items", "name": "नूडल्स | Noodles", "price": "Rs. 0", "desc": "Noodles", "tags": ["Veg", "Chinese"], "img": "img/noodles.jpg"},
-{"id": 7, "cat": "Popular Items", "name": "कॉकटेल राईस | Cocktail Rice", "price": "Rs. 0", "desc": "Cocktail Rice", "tags": ["Veg", "Chinese", "Rice"], "img": "img/cocktail_rice.jpg"},
-{"id": 8, "cat": "Popular Items", "name": "चिली चना | Chilli Chana", "price": "Rs. 0", "desc": "Chilli Chana", "tags": ["Veg", "Starter"], "img": "img/chilli_chana.jpg"},
-{"id": 9, "cat": "Popular Items", "name": "चिली पनीर | Chilli Paneer", "price": "Rs. 0", "desc": "Chilli Paneer", "tags": ["Veg", "Starter", "Paneer"], "img": "img/chilli_paneer.jpg"},
-{"id": 10, "cat": "Popular Items", "name": "पाव भाजी | Pav Bhaji", "price": "Rs. 0", "desc": "Pav Bhaji", "tags": ["Veg", "Fast Food"], "img": "img/pav_bhaji.jpg"},
-{"id": 11, "cat": "Popular Items", "name": "फ्रेंच फ्राईस | French Fries", "price": "Rs. 0", "desc": "French Fries", "tags": ["Veg", "Fast Food"], "img": "img/french_fries.jpg"},
-{"id": 12, "cat": "Popular Items", "name": "मोमोज | Momos", "price": "Rs. 0", "desc": "Momos", "tags": ["Veg", "Fast Food"], "img": "img/momos.jpg"},    
- 
+// {"id": 1, "cat": "Popular Items", "name": "बिर्याणी | Biryani", "price": "Rs. 170/120", "desc": "Biryani", "tags": ["Non-Veg", "Biryani"], "img": "img/biryani.jpg"},
+// {"id": 2, "cat": "Popular Items", "name": "चिकन रोस्ट | Chicken Roast", "price": "Rs. 150/80", "desc": "Chicken Roast", "tags": ["Non-Veg", "Chicken", "Starter"], "img": "img/chicken_roast.jpg"},
+// {"id": 3, "cat": "Popular Items", "name": "चिकन राईस | Chicken Rice", "price": "Rs. 150/80", "desc": "Chicken Rice", "tags": ["Non-Veg", "Chinese", "Rice"], "img": "img/chicken_rice.jpg"},
+// {"id": 4, "cat": "Popular Items", "name": "चिकन लॉलीपॉप | Chicken Lollipop", "price": "Rs. 150/80", "desc": "Chicken Lollipop", "tags": ["Non-Veg", "Chicken", "Starter"], "img": "img/chicken_lollipop.jpg"},
+// {"id": 5, "cat": "Popular Items", "name": "मंचुरियन | Manchurian", "price": "Rs. 80/40", "desc": "Manchurian", "tags": ["Veg", "Chinese"], "img": "img/manchurian.jpg"},
+// {"id": 6, "cat": "Popular Items", "name": "नूडल्स | Noodles", "price": "Rs. 80/40", "desc": "Noodles", "tags": ["Veg", "Chinese"], "img": "img/noodles.jpg"},
+// {"id": 7, "cat": "Popular Items", "name": "कॉकटेल राईस | Cocktail Rice", "price": "Rs. 100/50", "desc": "Cocktail Rice", "tags": ["Veg", "Chinese", "Rice"], "img": "img/cocktail_rice.jpg"},
+// {"id": 8, "cat": "Popular Items", "name": "चिली चना | Chilli Chana", "price": "Rs. 100/50", "desc": "Chilli Chana", "tags": ["Veg", "Starter"], "img": "img/chilli_chana.jpg"},
+// {"id": 9, "cat": "Popular Items", "name": "चिली पनीर | Chilli Paneer", "price": "Rs. 200/100", "desc": "Chilli Paneer", "tags": ["Veg", "Starter", "Paneer"], "img": "img/chilli_paneer.jpg"},
+// {"id": 10, "cat": "Popular Items", "name": "पाव भाजी | Pav Bhaji", "price": "Rs. 50", "desc": "Pav Bhaji", "tags": ["Veg", "Fast Food"], "img": "img/pav_bhaji.jpg"},
+// {"id": 11, "cat": "Popular Items", "name": "फ्रेंच फ्राईस | French Fries", "price": "Rs. 100/60", "desc": "French Fries", "tags": ["Veg", "Fast Food"], "img": "img/french_fries.jpg"},
+// {"id": 12, "cat": "Popular Items", "name": "व्हेज मोमोज | Veg Momos", "price": "Rs. 100/60", "desc": "Momos", "tags": ["Veg", "Fast Food"], "img": "img/momos.jpg"},    
+// {"id": 13, "cat": "Popular Items", "name": "पनीर मोमोज | Paneer Momos", "price": "Rs. 120/60", "desc": "Momos", "tags": ["Veg", "Fast Food"], "img": "img/paneer_momos.jpg"},    
+
+
+{"id":1,"cat":"Popular Items","name":"बिर्याणी (Full) | Biryani Full","price":"Rs. 170","desc":"Biryani","tags":["Non-Veg","Biryani"],"img":"img/biryani.jpg"},
+{"id":2,"cat":"Popular Items","name":"बिर्याणी (Half) | Biryani Half","price":"Rs. 120","desc":"Biryani","tags":["Non-Veg","Biryani"],"img":"img/biryani.jpg"},
+
+{"id":3,"cat":"Popular Items","name":"चिकन रोस्ट (Full) | Chicken Roast Full","price":"Rs. 150","desc":"Chicken Roast","tags":["Non-Veg","Chicken","Starter"],"img":"img/chicken_roast.jpg"},
+{"id":4,"cat":"Popular Items","name":"चिकन रोस्ट (Half) | Chicken Roast Half","price":"Rs. 80","desc":"Chicken Roast","tags":["Non-Veg","Chicken","Starter"],"img":"img/chicken_roast.jpg"},
+
+{"id":5,"cat":"Popular Items","name":"चिकन राईस (Full) | Chicken Rice Full","price":"Rs. 150","desc":"Chicken Rice","tags":["Non-Veg","Chinese","Rice"],"img":"img/chicken_rice.jpg"},
+{"id":6,"cat":"Popular Items","name":"चिकन राईस (Half) | Chicken Rice Half","price":"Rs. 80","desc":"Chicken Rice","tags":["Non-Veg","Chinese","Rice"],"img":"img/chicken_rice.jpg"},
+
+{"id":7,"cat":"Popular Items","name":"चिकन लॉलीपॉप (Full) | Chicken Lollipop Full","price":"Rs. 150","desc":"Chicken Lollipop","tags":["Non-Veg","Chicken","Starter"],"img":"img/chicken_lollipop.jpg"},
+{"id":8,"cat":"Popular Items","name":"चिकन लॉलीपॉप (Half) | Chicken Lollipop Half","price":"Rs. 80","desc":"Chicken Lollipop","tags":["Non-Veg","Chicken","Starter"],"img":"img/chicken_lollipop.jpg"},
+
+{"id":9,"cat":"Popular Items","name":"मंचुरियन (Full) | Manchurian Full","price":"Rs. 80","desc":"Manchurian","tags":["Veg","Chinese"],"img":"img/manchurian.jpg"},
+{"id":10,"cat":"Popular Items","name":"मंचुरियन (Half) | Manchurian Half","price":"Rs. 40","desc":"Manchurian","tags":["Veg","Chinese"],"img":"img/manchurian.jpg"},
+
+{"id":11,"cat":"Popular Items","name":"नूडल्स (Full) | Noodles Full","price":"Rs. 80","desc":"Noodles","tags":["Veg","Chinese"],"img":"img/noodles.jpg"},
+{"id":12,"cat":"Popular Items","name":"नूडल्स (Half) | Noodles Half","price":"Rs. 40","desc":"Noodles","tags":["Veg","Chinese"],"img":"img/noodles.jpg"},
+
+{"id":13,"cat":"Popular Items","name":"कॉकटेल राईस (Full) | Cocktail Rice Full","price":"Rs. 100","desc":"Cocktail Rice","tags":["Veg","Chinese","Rice"],"img":"img/cocktail_rice.jpg"},
+{"id":14,"cat":"Popular Items","name":"कॉकटेल राईस (Half) | Cocktail Rice Half","price":"Rs. 50","desc":"Cocktail Rice","tags":["Veg","Chinese","Rice"],"img":"img/cocktail_rice.jpg"},
+
+{"id":15,"cat":"Popular Items","name":"चिली चना (Full) | Chilli Chana Full","price":"Rs. 100","desc":"Chilli Chana","tags":["Veg","Starter"],"img":"img/chilli_chana.jpg"},
+{"id":16,"cat":"Popular Items","name":"चिली चना (Half) | Chilli Chana Half","price":"Rs. 50","desc":"Chilli Chana","tags":["Veg","Starter"],"img":"img/chilli_chana.jpg"},
+
+{"id":17,"cat":"Popular Items","name":"चिली पनीर (Full) | Chilli Paneer Full","price":"Rs. 200","desc":"Chilli Paneer","tags":["Veg","Starter","Paneer"],"img":"img/chilli_paneer.jpg"},
+{"id":18,"cat":"Popular Items","name":"चिली पनीर (Half) | Chilli Paneer Half","price":"Rs. 100","desc":"Chilli Paneer","tags":["Veg","Starter","Paneer"],"img":"img/chilli_paneer.jpg"},
+
+{"id":19,"cat":"Popular Items","name":"पाव भाजी | Pav Bhaji","price":"Rs. 50","desc":"Pav Bhaji","tags":["Veg","Fast Food"],"img":"img/pav_bhaji.jpg"},
+
+{"id":20,"cat":"Popular Items","name":"फ्रेंच फ्राईस (Full) | French Fries Full","price":"Rs. 100","desc":"French Fries","tags":["Veg","Fast Food"],"img":"img/french_fries.jpg"},
+{"id":21,"cat":"Popular Items","name":"फ्रेंच फ्राईस (Half) | French Fries Half","price":"Rs. 60","desc":"French Fries","tags":["Veg","Fast Food"],"img":"img/french_fries.jpg"},
+
+{"id":22,"cat":"Popular Items","name":"व्हेज मोमोज (Full) | Veg Momos Full","price":"Rs. 100","desc":"Momos","tags":["Veg","Fast Food"],"img":"img/momos.jpg"},
+{"id":23,"cat":"Popular Items","name":"व्हेज मोमोज (Half) | Veg Momos Half","price":"Rs. 60","desc":"Momos","tags":["Veg","Fast Food"],"img":"img/momos.jpg"},
+
+{"id":24,"cat":"Popular Items","name":"पनीर मोमोज (Full) | Paneer Momos Full","price":"Rs. 120","desc":"Momos","tags":["Veg","Fast Food"],"img":"img/paneer_momos.jpg"},
+{"id":25,"cat":"Popular Items","name":"पनीर मोमोज (Half) | Paneer Momos Half","price":"Rs. 60","desc":"Momos","tags":["Veg","Fast Food"],"img":"img/paneer_momos.jpg"},
+              
     ];
         
         // Cart functionality    
